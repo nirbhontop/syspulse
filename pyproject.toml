@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "syspulse"
+version = "1.0.0"
+description = "A sleek, zero-bloat terminal system monitor and telemetry dashboard built with Python and Rich."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Nirbhontop", email = "nirbhontop@users.noreply.github.com"}
+]
+keywords = ["cli", "system-monitor", "terminal", "dashboard", "telemetry", "htop", "psutil"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Monitoring",
+]
+dependencies = [
+    "psutil>=5.9.0",
+    "rich>=13.7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/nirbhontop/syspulse"
+Repository = "https://github.com/nirbhontop/syspulse"
+Issues = "https://github.com/nirbhontop/syspulse/issues"
+
+[project.scripts]
+syspulse = "syspulse.cli:main"
